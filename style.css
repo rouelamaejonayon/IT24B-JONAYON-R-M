@@ -1,0 +1,47 @@
+body, h1,p{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    font-family: Arial, sans-serif;
+    text-align: center;
+    font-size: 3em;
+    color: blueviolet;
+    background-color: bisque;
+    padding: 20px;
+    margin: 0;
+}
+
+.body{
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: blueviolet;
+    background-color: bisque;
+    padding: 0;
+}
+
+.paragraph {
+    font-size: 3em;
+    font-weight: 900;
+    text-align: center;
+    margin: 20px 0;
+    color: blueviolet;
+}
+
+hr.rounded {
+    border: 3;
+    height: 2px;
+    background: honeydew;
+    margin: 20px auto;
+    width: 80%;
+
+}
+
+p {
+    background: mistyrose;
+    border-radius: 8px;
+    box-shadow: floralwhite;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 800px;
+}

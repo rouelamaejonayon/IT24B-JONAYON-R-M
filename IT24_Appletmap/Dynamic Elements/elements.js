@@ -35,7 +35,7 @@ class StudentList {
             `;
         });
     }
-    
+
     bindSearchEvent() {
         const studentSearchBar = document.getElementById('studentSearchBar');
 
@@ -45,6 +45,18 @@ class StudentList {
 
         this.renderStudentList(this.students);
     }
+    
+    filterStudents(query) {
+        const filteredStudents = this.students.filter(student => {
+            const fullName = `${student.student_name} ${student.student_program}`;
+            return fullName.toLowerCase().includes(query.toLowerCase());
+        });
+
+        this.renderStudentList(filteredStudents);
+    }
+}
+
+const studentList = new StudentList('applet-4.json');
 
 
 }

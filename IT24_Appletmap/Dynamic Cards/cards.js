@@ -21,10 +21,30 @@ class WeatherApp {
         this.humidity.textContent = `Humidity: ${data.main.humidity}%`;
         this.windSpeed.textContent = `Wind Speed: ${data.wind.speed} m/s`;
         
-        
+
         const iconCode = data.weather[0].icon;
         const iconUrl = `https://openweathermap.org/img/wn/${iconCode}@2x.png`;
         document.getElementById('weatherIcon').src = iconUrl;
     
         this.weatherCard.style.display = 'block';
+    }
+
+
+
+}
+
+class WeatherService extends WeatherApp {
+    async fetchWeather() {
+        const apiKey = this.apiKey.value
+        const city = this.cityInput.value;
+        if (city) {
+            const data = await this.getWeatherData(city,apiKey);
+            if (data) {
+                this.displayWeather(data,apiKey);
+            } else {
+                alert('City not found. Please try again.');
+            }
+        } else {
+            alert('Please enter a city name.');
+        }
     }

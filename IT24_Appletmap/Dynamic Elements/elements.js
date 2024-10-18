@@ -23,4 +23,17 @@ class StudentList {
         }
     }
 
+    renderStudentList(students) {
+        const studentSearchListContainer = document.getElementById('studentSearchList');
+        studentSearchListContainer.innerHTML = ''; 
+
+        students.forEach(student => {
+            studentSearchListContainer.innerHTML += `
+                <p> ${student.student_name}</p>
+                <p class="fw-light"> ${student.student_program} </p>
+                <hr>
+            `;
+        });
+    }
+
 }

@@ -45,7 +45,7 @@ class StudentList {
 
         this.renderStudentList(this.students);
     }
-    
+
     filterStudents(query) {
         const filteredStudents = this.students.filter(student => {
             const fullName = `${student.student_name} ${student.student_program}`;
@@ -56,7 +56,4 @@ class StudentList {
     }
 }
 
-const studentList = new StudentList('applet-4.json');
-
-
-}
+const studentList = new StudentList('elements.json');

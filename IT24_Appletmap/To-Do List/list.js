@@ -51,3 +51,16 @@ class TodoList {
         `;
         return listItem;
     }
+
+    doneTask(target) {
+        const taskItem = target.closest('.todo-item');
+        taskItem.querySelector('.task-text').classList.toggle('completed');
+        this.disableButtons(taskItem);
+    }
+
+    updateTask(taskText, dueDate) {
+        const taskItem = this.todoList.children[this.editingIndex];
+        taskItem.querySelector('.task-text').textContent = taskText;
+        taskItem.querySelector('.due-date').textContent = `Due Date: ${dueDate ? new Date(dueDate).toLocaleString() : 'No due date'}`;
+        this.resetEditing();
+    }

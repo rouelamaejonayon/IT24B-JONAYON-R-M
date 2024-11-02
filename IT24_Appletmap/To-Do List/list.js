@@ -64,3 +64,16 @@ class TodoList {
         taskItem.querySelector('.due-date').textContent = `Due Date: ${dueDate ? new Date(dueDate).toLocaleString() : 'No due date'}`;
         this.resetEditing();
     }
+
+    removeTask(target) {
+        this.todoList.removeChild(target.closest('.todo-item'));
+    }
+
+    editTask(target) {
+        const taskItem = target.closest('.todo-item');
+        this.todoInput.value = taskItem.querySelector('.task-text').textContent;
+        const dueDateText = taskItem.querySelector('.due-date').textContent.replace('Due Date: ', '');
+        this.dueDateInput.value = new Date(dueDateText).toISOString().slice(0, -1);  // Set due date input
+        this.editingIndex = Array.from(this.todoList.children).indexOf(taskItem);
+        this.addButton.textContent = 'Update';
+    }

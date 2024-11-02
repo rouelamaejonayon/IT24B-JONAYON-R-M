@@ -30,3 +30,8 @@ class TodoList {
             this.dueDateInput.value = '';  
         }
     }
+
+    addTask(taskText, dueDate) {
+        const listItem = this.createTaskElement(taskText, dueDate);
+        this.todoList.appendChild(listItem);
+    }

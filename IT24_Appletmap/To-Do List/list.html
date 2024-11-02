@@ -59,3 +59,21 @@
     </div>
   </div>
 </nav>
+
+<div class="applet-container">
+    <div class="container-fluid"  style="max-width: 40%;">
+        <h2 class="text-center">To-Do List</h2>
+        <div class="input-group mb-4">
+            <textarea class="form-control" id="todoInput" placeholder="Add a new task"  rows="3"></textarea>
+            <div class="input-group-append" style="margin-left: .5rem;">
+                <button class="btn btn-primary" id="addButton">Add</button>
+            </div>
+        </div>
+        <h2 class="text-center">Add Due Date and Time</h2>
+        <input class="applet-container" type="datetime-local" id="dueDateInput" placeholder="Set Due Date and Time">
+        <ul id="todoList" class="list-group"></ul>
+    </div>
+</div>
+<script src="list.js"></script>
+</body>
+</html>

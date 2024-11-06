@@ -42,4 +42,4 @@ class AppletRenderer {
 }
 
 const appletRenderer = new AppletRenderer('applet-container');
-appletRenderer.fetchAppletData('appletinfo.json');
+appletRenderer.fetchAppletData('cards.json');

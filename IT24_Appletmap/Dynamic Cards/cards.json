@@ -17,7 +17,7 @@
       "title": "Applet 3 - Dynamic Elements",
       "icon":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUBvxo5D1HhtA1ORmg3iifsuLNY5B_iVWIwg&s",
       "description": "This application applies dynamic elements such as rendering DOM elements from a list",
-      "link": "../Dynamical Card/cards.html"
+      "link": "../Dynamic Elements/elements.html"
     }
     ,
     {
@@ -30,14 +30,14 @@
     {
       "title": "Applet 5 - Dynamic Cards",
       "icon":"https://avatars.githubusercontent.com/u/1743227?s=200&v=4",
-      "description": "This application is the basic usage of the Openweather API",
+      "description": "This application is the basic usage of the Dynamic Cards",
       "link": "../Dynamic Cards/cards.html"
     }
     ,
     {
       "title": "Applet  6 - To-Do List",
       "icon":"https://avatars.githubusercontent.com/u/1743227?s=200&v=4",
-      "description": "This application is the basic usage of the Openweather API",
+      "description": "This application is the basic usage of the To-Do List",
       "link": "../To-Do List/list.html"
     }
     
